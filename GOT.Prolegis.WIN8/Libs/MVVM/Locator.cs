@@ -12,7 +12,7 @@ namespace GOT.Prolegis.WIN8.Libs.MVVM
     public class Locator
     {
         #region Public Properties 
-        [ImportMany("ViewModel")]
+        [ImportMany]
         public IList<Lazy<ProlegisViewModelBase, ViewModelMetadata>> ViewModelsLazy { get; set; }
 
         public object this[string viewModel]

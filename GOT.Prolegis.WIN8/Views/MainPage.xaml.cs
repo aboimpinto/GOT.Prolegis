@@ -1,4 +1,5 @@
-﻿using GOT.Prolegis.WIN8.ViewModels;
+﻿using GOT.Prolegis.WIN8.Libs.MVVM;
+using GOT.Prolegis.WIN8.ViewModels;
 using Microsoft.Live;
 using System;
 using System.Collections.Generic;
@@ -38,6 +39,8 @@ namespace GOT.Prolegis.WIN8
         /// property is typically used to configure the page.</param>
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
+            ((ProlegisViewModelBase)DataContext).InitializeViewModel();
+
             //var liveIdClient = new LiveAuthClient();
             //Task<LiveLoginResult> tskLoginResult = liveIdClient.LoginAsync(new string[] { "wl.signin" });
             //tskLoginResult.Wait();

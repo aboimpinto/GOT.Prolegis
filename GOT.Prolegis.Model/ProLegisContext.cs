@@ -1,6 +1,7 @@
 ﻿using System.Data.Entity;
 using GOT.Prolegis.Portable.Entities;
 using GOT.Prolegis.Portable.GeneralData;
+using GOT.Prolegis.Portable.Authentication;
 
 namespace GOT.Prolegis.Model
 {
@@ -11,6 +12,9 @@ namespace GOT.Prolegis.Model
 
         // General Data
         public IDbSet<EntityType> EntityTypes { get; set; }
+
+        // Authentication
+        public IDbSet<User> Users { get; set; }
 
         #region Constructor
         public ProLegisContext() : base("ProLegisContext")
@@ -24,6 +28,7 @@ namespace GOT.Prolegis.Model
 
             modelBuilder.Entity<Entity>().ToTable("Entity", "Prolegis");
             modelBuilder.Entity<EntityType>().ToTable("EntityType", "Prolegis");
+            modelBuilder.Entity<User>().ToTable("User", "Prolegis");
 
             base.OnModelCreating(modelBuilder);
         }

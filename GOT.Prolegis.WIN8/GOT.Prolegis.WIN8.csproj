@@ -106,6 +106,9 @@
     <Compile Include="Libs\MVVM\ViewModelMetadata.cs" />
     <Compile Include="Libs\MVVM\Locator.cs" />
     <Compile Include="Libs\MVVM\ProlegisViewModelBase.cs" />
+    <Compile Include="Libs\AppContext.cs" />
+    <Compile Include="Model\AuthenticationModel.cs" />
+    <Compile Include="Model\Intefaces\IAuthenticationModel.cs" />
     <Compile Include="ViewModels\MainPageViewModel.cs" />
     <Compile Include="Views\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
@@ -174,7 +177,12 @@
       <HintPath>..\packages\Microsoft.Composition.1.0.15\lib\netcore45\System.Composition.TypedParts.dll</HintPath>
     </Reference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\GOT.Prolegis.Portable\GOT.Prolegis.Portable.csproj">
+      <Project>{5b7d626d-a020-4c26-9f2d-fcceeb63a837}</Project>
+      <Name>GOT.Prolegis.Portable</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0' ">
     <VisualStudioVersion>11.0</VisualStudioVersion>
   </PropertyGroup>

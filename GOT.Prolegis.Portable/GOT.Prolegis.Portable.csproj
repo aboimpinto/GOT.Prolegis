@@ -36,6 +36,7 @@
     <!-- A reference to the entire .NET Framework is automatically included -->
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Authentication\User.cs" />
     <Compile Include="Entities\Entity.cs" />
     <Compile Include="GeneralData\EntityType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
