@@ -8,9 +8,6 @@ C:\Users\Paulo\Documents\GitHub\GOT.Prolegis\GOT.Prolegis.Model\bin\Debug\Entity
 C:\Users\Paulo\Documents\GitHub\GOT.Prolegis\GOT.Prolegis.Model\obj\Debug\GOT.Prolegis.Model.csprojResolveAssemblyReference.cache
 C:\Users\Paulo\Documents\GitHub\GOT.Prolegis\GOT.Prolegis.Model\obj\Debug\GOT.Prolegis.Model.dll
 C:\Users\Paulo\Documents\GitHub\GOT.Prolegis\GOT.Prolegis.Model\obj\Debug\GOT.Prolegis.Model.pdb
-C:\Users\Paulo\Documents\GitHub\GOT.Prolegis\GOT.Prolegis.Model\obj\Debug\GOT.Prolegis.Model.Migrations.InitialState.resources
-C:\Users\Paulo\Documents\GitHub\GOT.Prolegis\GOT.Prolegis.Model\obj\Debug\GOT.Prolegis.Model.csproj.GenerateResource.Cache
-C:\Users\Paulo\Documents\GitHub\GOT.Prolegis\GOT.Prolegis.Model\obj\Debug\GOT.Prolegis.Model.Migrations.EntityTypeDefaultData.resources
 C:\Users\Paulo\Documents\GitHub\GOT.Prolegis\GOT.Prolegis.Model\bin\Debug\System.Composition.AttributedModel.dll
 C:\Users\Paulo\Documents\GitHub\GOT.Prolegis\GOT.Prolegis.Model\bin\Debug\System.Composition.Convention.dll
 C:\Users\Paulo\Documents\GitHub\GOT.Prolegis\GOT.Prolegis.Model\bin\Debug\System.Composition.Hosting.dll
@@ -21,4 +18,5 @@ C:\Users\Paulo\Documents\GitHub\GOT.Prolegis\GOT.Prolegis.Model\bin\Debug\System
 C:\Users\Paulo\Documents\GitHub\GOT.Prolegis\GOT.Prolegis.Model\bin\Debug\System.Composition.Hosting.xml
 C:\Users\Paulo\Documents\GitHub\GOT.Prolegis\GOT.Prolegis.Model\bin\Debug\System.Composition.Runtime.xml
 C:\Users\Paulo\Documents\GitHub\GOT.Prolegis\GOT.Prolegis.Model\bin\Debug\System.Composition.TypedParts.xml
-C:\Users\Paulo\Documents\GitHub\GOT.Prolegis\GOT.Prolegis.Model\obj\Debug\GOT.Prolegis.Model.Migrations.AddUserTable.resources
+C:\Users\Paulo\Documents\GitHub\GOT.Prolegis\GOT.Prolegis.Model\obj\Debug\GOT.Prolegis.Model.Migrations.InitialState.resources
+C:\Users\Paulo\Documents\GitHub\GOT.Prolegis\GOT.Prolegis.Model\obj\Debug\GOT.Prolegis.Model.csproj.GenerateResource.Cache

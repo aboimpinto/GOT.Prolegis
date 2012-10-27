@@ -36,9 +36,10 @@
     <!-- A reference to the entire .NET Framework is automatically included -->
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Authentication\User.cs" />
-    <Compile Include="Entities\Entity.cs" />
-    <Compile Include="GeneralData\EntityType.cs" />
+    <Compile Include="Authentication\tblUser.cs" />
+    <Compile Include="Entities\tblEntity.cs" />
+    <Compile Include="GeneralData\tblUserReferenceTable.cs" />
+    <Compile Include="GeneralData\dtoEntityType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />

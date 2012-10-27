@@ -7,6 +7,8 @@ using System.Threading.Tasks;
 using GOT.Prolegis.WIN8.Libs.MVVM;
 using GOT.Prolegis.WIN8.Libs;
 using System.Collections.ObjectModel;
+using GalaSoft.MvvmLight.Messaging;
+using GOT.Prolegis.WIN8.Dto;
 
 namespace GOT.Prolegis.WIN8.ViewModels
 {
@@ -14,9 +16,13 @@ namespace GOT.Prolegis.WIN8.ViewModels
     [ExportMetadata("Name", "MainPageViewModel")]
     public class MainPageViewModel : ProlegisViewModelBase
     {
-        private ObservableCollection<string> _mainMenuSource;
+        #region Private Fields 
+        private ObservableCollection<MenuItemDto> _mainMenuSource;
+        private MenuItemDto _menuSelectedItem;
+        #endregion
 
-        public ObservableCollection<string> MainMenuSource 
+        #region Public Properties
+        public ObservableCollection<MenuItemDto> MainMenuSource 
         {
             get { return _mainMenuSource; }
             set 
@@ -25,17 +31,32 @@ namespace GOT.Prolegis.WIN8.ViewModels
                 RaisePropertyChanged(() => MainMenuSource);
             }
         }
+        public MenuItemDto MenuSelectedItem 
+        {
+            get { return _menuSelectedItem; }
+            set
+            {
+                _menuSelectedItem = value;
+                RaisePropertyChanged(() => MenuSelectedItem);
+                Messenger.Default.Send<WindowNavigationArgs>(new WindowNavigationArgs()
+                {
+                    WindowName=_menuSelectedItem.NavigationWindow,
+                    Parameter = null
+                });
+            }
+        }
+        #endregion
 
-        #region Constructor 
+        #region Constructor
         [ImportingConstructor]
         public MainPageViewModel(AppContext appContext) : base(appContext)
         {
             if (IsInDesignMode)
             {
-                this.MainMenuSource = new ObservableCollection<string>();
-                this.MainMenuSource.Add("Dossiers");
-                this.MainMenuSource.Add("Clientes");
-                this.MainMenuSource.Add("Configurações");
+                this.MainMenuSource = new ObservableCollection<MenuItemDto>();
+                this.MainMenuSource.Add(new MenuItemDto() { MenuItem = "Dossiers", NavigationWindow = "DossiersList" });
+                this.MainMenuSource.Add(new MenuItemDto() { MenuItem = "Entities", NavigationWindow = "EntitiesList" });
+                this.MainMenuSource.Add(new MenuItemDto() { MenuItem = "Configurations", NavigationWindow = "Configurations" });
             }
         }
         #endregion
@@ -44,11 +65,10 @@ namespace GOT.Prolegis.WIN8.ViewModels
         {
             base.InitializeViewModel();
 
-            this.MainMenuSource = new ObservableCollection<string>();
-            this.MainMenuSource.Add("Dossiers");
-            this.MainMenuSource.Add("Clientes");
-            this.MainMenuSource.Add("Configurações");
-
+            this.MainMenuSource = new ObservableCollection<MenuItemDto>();
+            this.MainMenuSource.Add(new MenuItemDto() { MenuItem = "Dossiers", NavigationWindow = "DossiersList" });
+            this.MainMenuSource.Add(new MenuItemDto() { MenuItem = "Entities", NavigationWindow = "EntitiesList" });
+            this.MainMenuSource.Add(new MenuItemDto() { MenuItem = "Configurations", NavigationWindow = "Configurations" });
         }
 
         

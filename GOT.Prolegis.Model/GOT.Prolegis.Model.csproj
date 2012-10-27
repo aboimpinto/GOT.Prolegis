@@ -59,17 +59,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Migrations\201209161429254_InitialState.cs" />
-    <Compile Include="Migrations\201209161429254_InitialState.Designer.cs">
-      <DependentUpon>201209161429254_InitialState.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201209161431292_EntityTypeDefaultData.cs" />
-    <Compile Include="Migrations\201209161431292_EntityTypeDefaultData.Designer.cs">
-      <DependentUpon>201209161431292_EntityTypeDefaultData.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201209191844346_AddUserTable.cs" />
-    <Compile Include="Migrations\201209191844346_AddUserTable.Designer.cs">
-      <DependentUpon>201209191844346_AddUserTable.cs</DependentUpon>
+    <Compile Include="Migrations\201210250004547_InitialState.cs" />
+    <Compile Include="Migrations\201210250004547_InitialState.Designer.cs">
+      <DependentUpon>201210250004547_InitialState.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="ProLegisContext.cs" />
@@ -86,14 +78,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201209161429254_InitialState.resx">
-      <DependentUpon>201209161429254_InitialState.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201209161431292_EntityTypeDefaultData.resx">
-      <DependentUpon>201209161431292_EntityTypeDefaultData.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201209191844346_AddUserTable.resx">
-      <DependentUpon>201209191844346_AddUserTable.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201210250004547_InitialState.resx">
+      <DependentUpon>201210250004547_InitialState.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

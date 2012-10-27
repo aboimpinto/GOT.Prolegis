@@ -29,7 +29,7 @@ namespace GOT.Prolegis.WIN8.Libs
         #region Public Methods 
         public async Task<bool> CheckDatabaseUser(dynamic msnUser)
         {
-            List<User> users = await _authModel.CheckDatabaseUser(msnUser);
+            List<tblUser> users = await _authModel.CheckDatabaseUser(msnUser);
 
             if (users.Count() == 0)
             {

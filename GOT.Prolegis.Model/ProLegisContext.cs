@@ -8,13 +8,14 @@ namespace GOT.Prolegis.Model
     public class ProLegisContext : DbContext
     {
         // Entities 
-        public IDbSet<Entity> Entities { get; set; }
+        public IDbSet<tblEntity> tblEntities { get; set; }
 
         // General Data
-        public IDbSet<EntityType> EntityTypes { get; set; }
+        public IDbSet<tblUserReferenceTable> tblUserReferenceTables { get; set; }
 
         // Authentication
-        public IDbSet<User> Users { get; set; }
+        public IDbSet<tblUser> tblUsers { get; set; }
+
 
         #region Constructor
         public ProLegisContext() : base("ProLegisContext")
@@ -26,9 +27,9 @@ namespace GOT.Prolegis.Model
         {
             // update-database -Verbose -ConnectionString "Server=tcp:gswf5v1eeb.database.windows.net,1433;Database=ProLegisContext;User ID=imagoSA@gswf5v1eeb;Password=_Paulo2001;Trusted_Connection=False;Encrypt=True;Connection Timeout=30;" -ConnectionProviderName "System.Data.SqlClient"
 
-            modelBuilder.Entity<Entity>().ToTable("Entity", "Prolegis");
-            modelBuilder.Entity<EntityType>().ToTable("EntityType", "Prolegis");
-            modelBuilder.Entity<User>().ToTable("User", "Prolegis");
+            modelBuilder.Entity<tblEntity>().ToTable("tblEntity", "Prolegis");
+            modelBuilder.Entity<tblUserReferenceTable>().ToTable("tblUserReferenceTable", "Prolegis");
+            modelBuilder.Entity<tblUser>().ToTable("tblUser", "Prolegis");
 
             base.OnModelCreating(modelBuilder);
         }

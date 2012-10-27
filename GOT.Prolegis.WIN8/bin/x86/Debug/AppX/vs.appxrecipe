@@ -16,17 +16,17 @@
     <AppXManifest Include="C:\Users\Paulo\Documents\GitHub\GOT.Prolegis\GOT.Prolegis.WIN8\bin\x86\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2012-09-21T18:09:19.657</Modified>
+      <Modified>2012-10-27T13:44:15.062</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Paulo\Documents\GitHub\GOT.Prolegis\GOT.Prolegis.WIN8\bin\x86\Debug\GOT.Prolegis.WIN8.exe">
       <PackagePath>GOT.Prolegis.WIN8.exe</PackagePath>
-      <Modified>2012-09-21T22:27:44.562</Modified>
+      <Modified>2012-10-27T13:44:52.109</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Paulo\Documents\GitHub\GOT.Prolegis\GOT.Prolegis.WIN8\bin\x86\Debug\GOT.Prolegis.WIN8.pdb">
       <PackagePath>GOT.Prolegis.WIN8.pdb</PackagePath>
-      <Modified>2012-09-21T22:27:44.534</Modified>
+      <Modified>2012-10-27T13:44:52.089</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Paulo\Documents\GitHub\GOT.Prolegis\packages\MvvmLightLibs.4.1.23.0\lib\winrt45\GalaSoft.MvvmLight.Extras.Win8.dll">
       <PackagePath>GalaSoft.MvvmLight.Extras.Win8.dll</PackagePath>
@@ -38,7 +38,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Paulo\Documents\GitHub\GOT.Prolegis\GOT.Prolegis.Portable\bin\Debug\GOT.Prolegis.Portable.dll">
       <PackagePath>GOT.Prolegis.Portable.dll</PackagePath>
-      <Modified>2012-09-19T18:43:35.588</Modified>
+      <Modified>2012-10-25T00:04:53.295</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Live\v5.0\Metro XAML\References\CommonConfiguration\Neutral\Microsoft.Live.Controls.dll">
       <PackagePath>Microsoft.Live.Controls.dll</PackagePath>
@@ -78,7 +78,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Paulo\Documents\GitHub\GOT.Prolegis\GOT.Prolegis.Portable\bin\Debug\GOT.Prolegis.Portable.pdb">
       <PackagePath>GOT.Prolegis.Portable.pdb</PackagePath>
-      <Modified>2012-09-19T18:43:35.550</Modified>
+      <Modified>2012-10-25T00:04:53.277</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Paulo\Documents\GitHub\GOT.Prolegis\packages\MvvmLightLibs.4.1.23.0\lib\winrt45\GalaSoft.MvvmLight.Extras.Win8.xml">
       <PackagePath>GalaSoft.MvvmLight.Extras.Win8.xml</PackagePath>
@@ -132,6 +132,10 @@
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2012-03-15T19:42:52.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Paulo\Documents\GitHub\GOT.Prolegis\GOT.Prolegis.WIN8\Common\ReadMe.txt">
+      <PackagePath>Common\ReadMe.txt</PackagePath>
+      <Modified>2012-10-25T20:34:25.455</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Paulo\Documents\GitHub\GOT.Prolegis\GOT.Prolegis.WIN8\bin\x86\Debug\App.xaml">
       <PackagePath>App.xaml</PackagePath>
       <Modified>2012-09-18T22:05:02.274</Modified>
@@ -140,13 +144,17 @@
       <PackagePath>Common\StandardStyles.xaml</PackagePath>
       <Modified>2012-06-26T15:19:20.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Paulo\Documents\GitHub\GOT.Prolegis\GOT.Prolegis.WIN8\bin\x86\Debug\Views\EntitiesList.xaml">
+      <PackagePath>Views\EntitiesList.xaml</PackagePath>
+      <Modified>2012-10-25T22:56:09.167</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Paulo\Documents\GitHub\GOT.Prolegis\GOT.Prolegis.WIN8\bin\x86\Debug\Views\MainPage.xaml">
       <PackagePath>Views\MainPage.xaml</PackagePath>
-      <Modified>2012-09-21T22:27:39.569</Modified>
+      <Modified>2012-10-27T13:44:50.995</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Paulo\Documents\GitHub\GOT.Prolegis\GOT.Prolegis.WIN8\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2012-09-18T22:04:11.135</Modified>
+      <Modified>2012-10-27T13:14:51.066</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

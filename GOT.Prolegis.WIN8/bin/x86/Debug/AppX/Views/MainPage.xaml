@@ -130,30 +130,50 @@
 
     <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
         <Grid.RowDefinitions>
-            <RowDefinition Height="150" />
+            <RowDefinition Height="135" />
             <RowDefinition Height="60" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
         <Grid Margin="120,60,30,0">
         	<TextBlock HorizontalAlignment="Left" Height="60" TextWrapping="Wrap" Text="ProLegis" VerticalAlignment="Top" Width="273" FontSize="48" Foreground="#FFF00C0C"/>
-        	<TextBlock HorizontalAlignment="Left" Height="14" Margin="0,60,0,0" TextWrapping="Wrap" Text="Global Office Tools" VerticalAlignment="Top" Width="273" FontSize="13.333"/>
-        	<Rectangle Height="18" Margin="0,74,0,-2" Stroke="Black" VerticalAlignment="Top">
+        	<TextBlock HorizontalAlignment="Left" Height="14" Margin="2,48,0,0" TextWrapping="Wrap" Text="Global Office Tools" VerticalAlignment="Top" Width="273" FontSize="13.333"/>
+        </Grid>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="120" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="30" />
+            </Grid.ColumnDefinitions>
+            <Rectangle HorizontalAlignment="Left" Height="60" Stroke="Black" VerticalAlignment="Top" Width="120" StrokeThickness="0">
+                <Rectangle.Fill>
+                    <LinearGradientBrush EndPoint="1,0.5" StartPoint="0,0.5">
+                        <GradientStop />
+                        <GradientStop Color="Black" Offset="1"/>
+                        <GradientStop Color="#D9000000" Offset="0.927"/>
+                    </LinearGradientBrush>
+                </Rectangle.Fill>
+            </Rectangle>
+            <ListBox Grid.Column="1" ItemsSource="{Binding MainMenuSource}" DisplayMemberPath="MenuItem" SelectedItem="{Binding MenuSelectedItem, Mode=TwoWay}" Height="60" VerticalAlignment="Top" SelectionMode="Single" ItemContainerStyle="{StaticResource ListBoxItemStyle1}" BorderThickness="0">
+        		<ListBox.ItemsPanel>
+        			<ItemsPanelTemplate>
+        				<StackPanel Orientation="Horizontal" Background="Black" />
+        			</ItemsPanelTemplate>
+        		</ListBox.ItemsPanel>
+        	</ListBox>
+        	
+        	<Rectangle Grid.Column="2" Height="60" Stroke="Black" VerticalAlignment="Top" StrokeThickness="0" Width="30">
         		<Rectangle.Fill>
-        			<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-        				<GradientStop Color="Black" Offset="1"/>
-        				<GradientStop Color="#FF7E7E7E"/>
+        			<LinearGradientBrush EndPoint="1,0.5" StartPoint="0,0.5">
+        				<GradientStop Offset="1"/>
+        				<GradientStop Color="Black"/>
+        				<GradientStop Color="Black" Offset="0.052"/>
         			</LinearGradientBrush>
         		</Rectangle.Fill>
         	</Rectangle>
-        </Grid>
-        <ListBox Grid.Column="1" ItemsSource="{Binding MainMenuSource}" Margin="120,0,30,0" Grid.Row="1" Height="60" VerticalAlignment="Top" SelectionMode="Single" ItemContainerStyle="{StaticResource ListBoxItemStyle1}">
-            <ListBox.ItemsPanel>
-                <ItemsPanelTemplate>
-                    <StackPanel Orientation="Horizontal" Background="Black" />
-                </ItemsPanelTemplate>
-            </ListBox.ItemsPanel>
-        </ListBox>
         
+        </Grid>
+        <Border Name="MainContent" BorderBrush="Black" BorderThickness="1" Margin="120,0,30,10" Grid.Row="2"/>
+
     </Grid>
 </Page>
 

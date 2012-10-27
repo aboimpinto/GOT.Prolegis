@@ -12,31 +12,31 @@ using System.Threading.Tasks;
 namespace GOT.Prolegis.WIN8.Model
 {
     [Export(typeof(IAuthenticationModel))]
-    public class AuthenticationModel : IAuthenticationModel
+    public class AuthenticationModel : IAuthenticationModel 
     {
-        #region Constructor
+        #region Constructor 
         [ImportingConstructor]
-        public AuthenticationModel()
+        public AuthenticationModel() 
         {
         }
         #endregion
 
         #region IAuthenticationModel Implementation 
-        public async Task<List<User>> CheckDatabaseUser(dynamic msnUser)
+        public async Task<List<tblUser>> CheckDatabaseUser(dynamic msnUser) 
         {
             string msnId = msnUser.id;
-            return await App.MobileService.GetTable<User>().Where(x => x.ExternalKey == msnId).ToListAsync();
+            return await App.MobileService.GetTable<tblUser>().Where(x => x.ExternalKey == msnId).ToListAsync();
         }
-        public async void InsertMsnUser(dynamic msnUser)
+        public async void InsertMsnUser(dynamic msnUser) 
         {
-            User userAux = new User()
+            tblUser userAux = new tblUser()
             {
                 FirstName = msnUser.first_name,
                 LastName = msnUser.last_name,
                 ExternalKey = msnUser.id
             };
 
-            await App.MobileService.GetTable<User>().InsertAsync(userAux);
+            await App.MobileService.GetTable<tblUser>().InsertAsync(userAux);
         }
         #endregion
     }

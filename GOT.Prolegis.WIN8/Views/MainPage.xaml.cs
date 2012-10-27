@@ -1,79 +1,55 @@
-﻿using GOT.Prolegis.WIN8.Libs.MVVM;
-using GOT.Prolegis.WIN8.ViewModels;
-using Microsoft.Live;
+﻿using Microsoft.Live;
 using System;
-using System.Collections.Generic;
-using System.IO;
 using System.Linq;
+using System.Collections.Generic;
+using System.Composition;
+using System.Reflection;
 using System.Threading.Tasks;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
-using Windows.UI.Xaml.Input;
-using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
-
-// The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
+using GalaSoft.MvvmLight.Messaging;
+using GOT.Prolegis.WIN8.Libs.MVVM;
+using GOT.Prolegis.WIN8.Views;
+using System.Composition.Hosting;
 
 namespace GOT.Prolegis.WIN8
 {
     public sealed partial class MainPage : Page
     {
-        MainPageViewModel _viewModel;
+        #region Public Properties 
+        [ImportMany]
+        public IEnumerable<Lazy<Page, WindowMetadata>> LazyWindowList { get; set; }
+        #endregion
 
+        #region Constructor
         public MainPage()
         {
-            //_viewModel = new MainPageViewModel();
-            //this.DataContext = _viewModel;
+            var containerConfiguration = new ContainerConfiguration().WithAssembly(typeof(App).GetTypeInfo().Assembly);
+            CompositionHost host = containerConfiguration.CreateContainer();
+            host.SatisfyImports(this);
 
             this.InitializeComponent();
+            this.Loaded += MainPage_Loaded;
         }
+        #endregion
 
-        /// <summary>
-        /// Invoked when this page is about to be displayed in a Frame.
-        /// </summary>
-        /// <param name="e">Event data that describes how this page was reached.  The Parameter
-        /// property is typically used to configure the page.</param>
-        protected override void OnNavigatedTo(NavigationEventArgs e)
+        #region Page Events 
+        void MainPage_Loaded(object sender, RoutedEventArgs e) 
+        {
+            Messenger.Default.Register<WindowNavigationArgs>(this, result =>
+            {
+                var oWindow = this.LazyWindowList.Single(x => x.Metadata.Name == result.WindowName).Value;
+                this.MainContent.Child = oWindow;
+            });
+        }
+        protected override void OnNavigatedTo(NavigationEventArgs e) 
         {
             ((ProlegisViewModelBase)DataContext).InitializeViewModel();
-
-            //var liveIdClient = new LiveAuthClient();
-            //Task<LiveLoginResult> tskLoginResult = liveIdClient.LoginAsync(new string[] { "wl.signin" });
-            //tskLoginResult.Wait();
-
-            //switch (tskLoginResult.Result.Status)
-            //{
-            //    case LiveConnectSessionStatus.Connected:
-
-            //        //LiveConnectClient client = new LiveConnectClient(tskLoginResult.Result.Session);
-            //        //Task<LiveOperationResult> tskResult = client.GetAsync("me");
-            //        //tskResult.Wait();
-            //        //LiveOperationResult opResult = tskResult.Result;
-
-            //        var user = GetLiveUser(tskLoginResult.Result.Session);
-
-            //        //string firstName = opResult.Result["first_name"].ToString();
-            //        var firstName = user.Result;
-
-            //        break;
-            //    case LiveConnectSessionStatus.NotConnected:
-            //        int j = 10;
-            //        break;
-            //    default:
-            //        int z = 10;
-            //        break;
-            //}
-
         }
+        #endregion
 
-        //private async string GetLiveUser(LiveConnectSession session)
-        //{
-            
-        //}
+        
 
         private async void Button_Click_1(object sender, RoutedEventArgs e)
         {
@@ -106,6 +82,11 @@ namespace GOT.Prolegis.WIN8
                     int z = 10;
                     break;
             }
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            this.MainContent.Child = new EntitiesList();
         }
     }
 }

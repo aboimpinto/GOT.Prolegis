@@ -15,10 +15,14 @@ namespace GOT.Prolegis.Model.Migrations
 
         protected override void Seed(GOT.Prolegis.Model.ProLegisContext context)
         {
-            context.EntityTypes.AddOrUpdate(x => x.Id,
-                           new EntityType { Id = 1, Name = "Cliente" },
-                           new EntityType { Id = 1, Name = "Fornecedor" },
-                           new EntityType { Id = 1, Name = "Outros" });
+            context.tblUserReferenceTables.AddOrUpdate(x => x.Id,
+                           new tblUserReferenceTable { Id = 1, ReferenceTable="EntityType", ReferenceId = 1, ReferenceValue="Cliente", IsActive = true, UserId=1 },
+                           new tblUserReferenceTable { Id = 1, ReferenceTable = "EntityType", ReferenceId = 2, ReferenceValue = "Fornecedor", IsActive = true, UserId = 1 },
+                           new tblUserReferenceTable { Id = 1, ReferenceTable = "EntityType", ReferenceId = 3, ReferenceValue = "Outros", IsActive = true, UserId = 1 });
+
+            //context.Database.ExecuteSqlCommand("IF  EXISTS (SELECT * FROM sys.tables WHERE object_id = OBJECT_ID(N'[Prolegis].[vwEntityType]')) DROP TABLE [Prolegis].[vwEntityType]");
+            //context.Database.ExecuteSqlCommand(@"CREATE VIEW [Prolegis].[vwEntityType] AS SELECT TOP (100) PERCENT ReferenceId AS Id, ReferenceValue AS EntityType FROM [Prolegis].tblUserReferenceTable WHERE (ReferenceTable = 'EntityType') AND (IsActive = 1) ORDER BY Id");
+            //context.SaveChanges();
         }
     }
 }

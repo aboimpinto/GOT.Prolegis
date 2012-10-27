@@ -120,7 +120,9 @@ namespace GOT.Prolegis.WIN8.GOT_Prolegis_WIN8_XamlTypeInfo
 
         private object Activate_7_ObservableObject() { return new global::GalaSoft.MvvmLight.ObservableObject(); }
 
-        private object Activate_8_MainPage() { return new global::GOT.Prolegis.WIN8.MainPage(); }
+        private object Activate_8_EntitiesList() { return new global::GOT.Prolegis.WIN8.Views.EntitiesList(); }
+
+        private object Activate_9_MainPage() { return new global::GOT.Prolegis.WIN8.MainPage(); }
 
         private void VectorAdd_1_IList(object instance, object item)
         {
@@ -212,9 +214,25 @@ namespace GOT.Prolegis.WIN8.GOT_Prolegis_WIN8_XamlTypeInfo
                 xamlType = userType;
                 break;
 
+            case "GOT.Prolegis.WIN8.Views.EntitiesList":
+                userType = new global::GOT.Prolegis.WIN8.GOT_Prolegis_WIN8_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::GOT.Prolegis.WIN8.Views.EntitiesList), GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_8_EntitiesList;
+                xamlType = userType;
+                break;
+
             case "GOT.Prolegis.WIN8.MainPage":
                 userType = new global::GOT.Prolegis.WIN8.GOT_Prolegis_WIN8_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::GOT.Prolegis.WIN8.MainPage), GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_8_MainPage;
+                userType.Activator = Activate_9_MainPage;
+                userType.AddMemberName("LazyWindowList");
+                AddToMapOfTypeToStandardName(typeof(global::System.Collections.Generic.IEnumerable<System.Lazy<global::Windows.UI.Xaml.Controls.Page, global::GOT.Prolegis.WIN8.Libs.MVVM.IWindowMetadata>>),
+                                                   "System.Collections.Generic.IEnumerable<System.Lazy<Windows.UI.Xaml.Controls.Page, GOT.Prolegis.WIN8.Libs.MVVM.IWindowMetadata>>");
+                xamlType = userType;
+                break;
+
+            case "System.Collections.Generic.IEnumerable<System.Lazy<Windows.UI.Xaml.Controls.Page, GOT.Prolegis.WIN8.Libs.MVVM.IWindowMetadata>>":
+                userType = new global::GOT.Prolegis.WIN8.GOT_Prolegis_WIN8_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::System.Collections.Generic.IEnumerable<System.Lazy<global::Windows.UI.Xaml.Controls.Page, global::GOT.Prolegis.WIN8.Libs.MVVM.IWindowMetadata>>), null);
+                AddToMapOfTypeToStandardName(typeof(global::System.Collections.Generic.IEnumerable<System.Lazy<global::Windows.UI.Xaml.Controls.Page, global::GOT.Prolegis.WIN8.Libs.MVVM.IWindowMetadata>>),
+                                                   "System.Collections.Generic.IEnumerable<System.Lazy<Windows.UI.Xaml.Controls.Page, GOT.Prolegis.WIN8.Libs.MVVM.IWindowMetadata>>");
                 xamlType = userType;
                 break;
 
@@ -248,6 +266,16 @@ namespace GOT.Prolegis.WIN8.GOT_Prolegis_WIN8_XamlTypeInfo
             var that = (global::System.Lazy<global::GOT.Prolegis.WIN8.Libs.MVVM.ProlegisViewModelBase>)instance;
             return that.Value;
         }
+        private object get_4_MainPage_LazyWindowList(object instance)
+        {
+            var that = (global::GOT.Prolegis.WIN8.MainPage)instance;
+            return that.LazyWindowList;
+        }
+        private void set_4_MainPage_LazyWindowList(object instance, object Value)
+        {
+            var that = (global::GOT.Prolegis.WIN8.MainPage)instance;
+            that.LazyWindowList = (global::System.Collections.Generic.IEnumerable<System.Lazy<global::Windows.UI.Xaml.Controls.Page, global::GOT.Prolegis.WIN8.Libs.MVVM.IWindowMetadata>>)Value;
+        }
 
         private global::Windows.UI.Xaml.Markup.IXamlMember CreateXamlMember(string longMemberName)
         {
@@ -279,6 +307,12 @@ namespace GOT.Prolegis.WIN8.GOT_Prolegis_WIN8_XamlTypeInfo
                 xamlMember = new global::GOT.Prolegis.WIN8.GOT_Prolegis_WIN8_XamlTypeInfo.XamlMember(this, "Value", "GOT.Prolegis.WIN8.Libs.MVVM.ProlegisViewModelBase");
                 xamlMember.Getter = get_3_Lazy_Value;
                 xamlMember.SetIsReadOnly();
+                break;
+            case "GOT.Prolegis.WIN8.MainPage.LazyWindowList":
+                userType = (global::GOT.Prolegis.WIN8.GOT_Prolegis_WIN8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GOT.Prolegis.WIN8.MainPage");
+                xamlMember = new global::GOT.Prolegis.WIN8.GOT_Prolegis_WIN8_XamlTypeInfo.XamlMember(this, "LazyWindowList", "System.Collections.Generic.IEnumerable<System.Lazy<Windows.UI.Xaml.Controls.Page, GOT.Prolegis.WIN8.Libs.MVVM.IWindowMetadata>>");
+                xamlMember.Getter = get_4_MainPage_LazyWindowList;
+                xamlMember.Setter = set_4_MainPage_LazyWindowList;
                 break;
             }
             return xamlMember;
