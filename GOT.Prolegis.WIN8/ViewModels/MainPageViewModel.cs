@@ -61,6 +61,7 @@ namespace GOT.Prolegis.WIN8.ViewModels
         }
         #endregion
 
+        #region Override Methods 
         public override async void InitializeViewModel()
         {
             base.InitializeViewModel();
@@ -70,7 +71,6 @@ namespace GOT.Prolegis.WIN8.ViewModels
             this.MainMenuSource.Add(new MenuItemDto() { MenuItem = "Entities", NavigationWindow = "EntitiesList" });
             this.MainMenuSource.Add(new MenuItemDto() { MenuItem = "Configurations", NavigationWindow = "Configurations" });
         }
-
-        
+        #endregion
     }
 }

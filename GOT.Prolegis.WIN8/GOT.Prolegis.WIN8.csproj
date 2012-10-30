@@ -118,7 +118,12 @@
     <Compile Include="Libs\MVVM\WindowNavigationArgs.cs" />
     <Compile Include="Model\AuthenticationModel.cs" />
     <Compile Include="Model\Intefaces\IAuthenticationModel.cs" />
+    <Compile Include="ViewModels\EntityListViewModel.cs" />
+    <Compile Include="ViewModels\Interfaces\IEntityListViewModel.cs" />
     <Compile Include="ViewModels\MainPageViewModel.cs" />
+    <Compile Include="Views\EditEntity.xaml.cs">
+      <DependentUpon>EditEntity.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\EntitiesList.xaml.cs">
       <DependentUpon>EntitiesList.xaml</DependentUpon>
     </Compile>
@@ -149,6 +154,10 @@
     <Page Include="Common\StandardStyles.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\EditEntity.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\EntitiesList.xaml">
       <SubType>Designer</SubType>

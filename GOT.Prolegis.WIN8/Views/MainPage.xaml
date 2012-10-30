@@ -7,6 +7,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     DataContext="{Binding [MainPageViewModel], Source={StaticResource locator}}"
     mc:Ignorable="d">
+    
 	<Page.Resources>
 		<Style x:Key="ContentPresenterStyle1" TargetType="ContentPresenter">
 			<Setter Property="Foreground" Value="White"/>
@@ -128,6 +129,23 @@
 		</Style>
 	</Page.Resources>
 
+    <!--<Page.BottomAppBar> 
+        <AppBar Padding="10,0,10,0" IsSticky="True">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="50*"/>
+                    <ColumnDefinition Width="50*"/>
+                </Grid.ColumnDefinitions>
+                <StackPanel Grid.Column="0">
+                    <TextBlock Text="Left Column" />
+                </StackPanel>
+                <StackPanel Grid.Column="1">
+                    <TextBlock Text="Right Column" />
+                </StackPanel>
+            </Grid>
+        </AppBar>
+    </Page.BottomAppBar>-->
+    
     <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
         <Grid.RowDefinitions>
             <RowDefinition Height="135" />
@@ -172,7 +190,7 @@
         	</Rectangle>
         
         </Grid>
-        <Border Name="MainContent" BorderBrush="Black" BorderThickness="0" Margin="120,0,30,0" Grid.Row="2"/>
-
+        
+        <Border Grid.Row="2" Name="MainContent" BorderBrush="Black" BorderThickness="0" Margin="120,0,30,0" />
     </Grid>
 </Page>

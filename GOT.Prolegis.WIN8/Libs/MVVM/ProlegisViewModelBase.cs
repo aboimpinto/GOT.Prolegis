@@ -17,7 +17,7 @@ namespace GOT.Prolegis.WIN8.Libs.MVVM
         private AppContext _appContext;
         #endregion
 
-        #region #Constuctor 
+        #region Constuctor 
         public ProlegisViewModelBase(AppContext appContext) 
         {
             _appContext = appContext;
@@ -28,9 +28,11 @@ namespace GOT.Prolegis.WIN8.Libs.MVVM
         #region Virtual Methods 
         public async virtual void InitializeViewModel()
         {
-            _appContext.AuthUser =  await GetUserLogged();
-
-            bool bInDatabase = await _appContext.CheckDatabaseUser(_appContext.AuthUser);
+            if (_appContext.AuthUser != null)
+            {
+                _appContext.AuthUser = await GetUserLogged();
+                bool bInDatabase = await _appContext.CheckDatabaseUser(_appContext.AuthUser);
+            }
         }
         #endregion
 
