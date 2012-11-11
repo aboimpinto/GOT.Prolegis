@@ -1,5 +1,6 @@
 ﻿using GalaSoft.MvvmLight;
 using GOT.Prolegis.Portable.Authentication;
+using GOT.Prolegis.WIN8.Libs.NavigationService;
 using GOT.Prolegis.WIN8.Model.Intefaces;
 using Microsoft.Live;
 using System;
@@ -13,31 +14,37 @@ namespace GOT.Prolegis.WIN8.Libs.MVVM
 {
     public abstract class ProlegisViewModelBase : ViewModelBase
     {
-        #region Private Fields 
-        private AppContext _appContext;
+        #region Public Properties 
+        public object WindowParamers { get; set; }
+        public AppContext AppContext { get; set; }
+        public INavigationService NavigationService { get; set; }
         #endregion
 
         #region Constuctor 
-        public ProlegisViewModelBase(AppContext appContext) 
+        public ProlegisViewModelBase() 
         {
-            _appContext = appContext;
+            this.Initialize(ImagoContainer.CurrentContainer.GetExport<AppContext>(), ImagoContainer.CurrentContainer.GetExport<INavigationService>());
+        }
+        public ProlegisViewModelBase(AppContext appContext, INavigationService navigationService) 
+        {
+            this.Initialize(appContext, navigationService);
         }
 
         #endregion
 
         #region Virtual Methods 
-        public async virtual void InitializeViewModel()
+        public async virtual void InitializeViewModel() 
         {
-            if (_appContext.AuthUser != null)
+            if (this.AppContext.AuthUser == null)
             {
-                _appContext.AuthUser = await GetUserLogged();
-                bool bInDatabase = await _appContext.CheckDatabaseUser(_appContext.AuthUser);
+                this.AppContext.AuthUser = await GetUserLogged();
+                bool bInDatabase = await this.AppContext.CheckDatabaseUser(this.AppContext.AuthUser);
             }
         }
         #endregion
 
-        #region Private Methods
-        private async Task<dynamic> GetUserLogged()
+        #region Private Methods 
+        private async Task<dynamic> GetUserLogged() 
         {
             var liveIdClient = new LiveAuthClient();
             Task<LiveLoginResult> tskLoginResult = liveIdClient.LoginAsync(new string[] { "wl.signin" });
@@ -64,6 +71,11 @@ namespace GOT.Prolegis.WIN8.Libs.MVVM
             }
 
             return null;
+        }
+        private void Initialize(AppContext appContext, INavigationService navigationService)
+        {
+            this.AppContext = appContext;
+            this.NavigationService = navigationService;
         }
         #endregion
     }

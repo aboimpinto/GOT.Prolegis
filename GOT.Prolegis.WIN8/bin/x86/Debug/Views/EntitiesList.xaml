@@ -28,7 +28,15 @@
     <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
         <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Entity List" VerticalAlignment="Top" Height="58" Width="218" FontSize="48"/>
         <Button Content="New" HorizontalAlignment="Right" Margin="0,30,20,0" VerticalAlignment="Top" Width="105" Command="{Binding NewEntityCommand}"/>
-
+        <GridView HorizontalAlignment="Left" Margin="10,68,0,0" VerticalAlignment="Top" Width="1346" Height="690" ItemsSource="{Binding Entities}" SelectionMode="Single" SelectedItem="{Binding EntitySelected, Mode=TwoWay}">
+            <GridView.ItemTemplate>
+                <DataTemplate>
+                    <Grid Width="200" Height="50">
+                        <TextBlock Text="{Binding ShortName}" />
+                    </Grid>
+                </DataTemplate>
+            </GridView.ItemTemplate>
+        </GridView>
     </Grid>
 </Page>
 

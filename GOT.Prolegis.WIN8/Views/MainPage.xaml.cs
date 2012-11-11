@@ -40,6 +40,7 @@ namespace GOT.Prolegis.WIN8
             Messenger.Default.Register<WindowNavigationArgs>(this, result =>
             {
                 var oWindow = this.LazyWindowList.Single(x => x.Metadata.Name == result.WindowName).Value;
+                ((ProlegisViewModelBase)oWindow.DataContext).WindowParamers = result.Parameter;
                 if (oWindow.DataContext is ProlegisViewModelBase) ((ProlegisViewModelBase)oWindow.DataContext).InitializeViewModel();
 
                 this.MainContent.Child = oWindow;

@@ -109,16 +109,26 @@
     <Compile Include="Common\LayoutAwarePage.cs" />
     <Compile Include="Common\RichTextColumns.cs" />
     <Compile Include="Common\SuspensionManager.cs" />
+    <Compile Include="Controls\Breadcrumbs\Breadcrumps.xaml.cs">
+      <DependentUpon>Breadcrumps.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Dto\MenuItemDto.cs" />
+    <Compile Include="Libs\ImagoContainer.cs" />
     <Compile Include="Libs\MVVM\IWindowMetadata.cs" />
     <Compile Include="Libs\MVVM\ViewModelMetadata.cs" />
     <Compile Include="Libs\MVVM\Locator.cs" />
     <Compile Include="Libs\MVVM\ProlegisViewModelBase.cs" />
     <Compile Include="Libs\AppContext.cs" />
     <Compile Include="Libs\MVVM\WindowNavigationArgs.cs" />
+    <Compile Include="Libs\NavigationService\INavigationService.cs" />
+    <Compile Include="Libs\NavigationService\NavigationService.cs" />
     <Compile Include="Model\AuthenticationModel.cs" />
+    <Compile Include="Model\EntityModel.cs" />
     <Compile Include="Model\Intefaces\IAuthenticationModel.cs" />
+    <Compile Include="Model\Intefaces\IEntityModel.cs" />
+    <Compile Include="ViewModels\EditEntityViewModel.cs" />
     <Compile Include="ViewModels\EntityListViewModel.cs" />
+    <Compile Include="ViewModels\Interfaces\IEditEntityViewModel.cs" />
     <Compile Include="ViewModels\Interfaces\IEntityListViewModel.cs" />
     <Compile Include="ViewModels\MainPageViewModel.cs" />
     <Compile Include="Views\EditEntity.xaml.cs">
@@ -154,6 +164,10 @@
     <Page Include="Common\StandardStyles.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\Breadcrumbs\Breadcrumps.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\EditEntity.xaml">
       <SubType>Designer</SubType>
@@ -209,6 +223,7 @@
       <Name>GOT.Prolegis.Portable</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0' ">
     <VisualStudioVersion>11.0</VisualStudioVersion>
   </PropertyGroup>

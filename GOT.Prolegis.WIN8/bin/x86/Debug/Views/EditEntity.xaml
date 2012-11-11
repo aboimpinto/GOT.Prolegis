@@ -5,10 +5,18 @@
     xmlns:local="using:GOT.Prolegis.WIN8.Views"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    DataContext="{Binding [EditEntityViewModel], Source={StaticResource locator}}"
     mc:Ignorable="d">
 
     <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
-
+        <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Edit Entity" VerticalAlignment="Top" Height="58" Width="218" FontSize="48"/>
+    	<TextBlock HorizontalAlignment="Left" Height="30" Margin="14,82,0,0" TextWrapping="Wrap" Text="Name" VerticalAlignment="Top" Width="166" FontSize="18.667"/>
+    	<TextBox HorizontalAlignment="Left" Height="30" Margin="222,80,0,0" TextWrapping="Wrap" Text="{Binding Entity.Name, Mode=TwoWay}" VerticalAlignment="Top" Width="679"/>
+    	<TextBlock HorizontalAlignment="Left" Height="30" Margin="14,133,0,0" TextWrapping="Wrap" Text="Short Name" VerticalAlignment="Top" Width="166" FontSize="18.667"/>
+        <TextBox HorizontalAlignment="Left" Height="30" Margin="222,131,0,0" TextWrapping="Wrap" Text="{Binding Entity.ShortName, Mode=TwoWay}" VerticalAlignment="Top" Width="282"/>
+    	<Button Content="Save" HorizontalAlignment="Left" Height="42" Margin="759,230,0,0" VerticalAlignment="Top" Width="142" Command="{Binding SaveEntityCommand}"/>
+        <CheckBox Content="Is Client" HorizontalAlignment="Left" Margin="222,188,0,0" VerticalAlignment="Top" IsChecked="{Binding Entity.IsClient, Mode=TwoWay}" />
+        <CheckBox Content="Is Supplier" HorizontalAlignment="Left" Margin="338,188,0,0" VerticalAlignment="Top" IsChecked="{Binding Entity.IsSupplier, Mode=TwoWay}"/>
     </Grid>
 </Page>
 

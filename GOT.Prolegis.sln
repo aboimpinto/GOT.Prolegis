@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GOT.Prolegis.Portable", "GO
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GOT.Prolegis.Model", "GOT.Prolegis.Model\GOT.Prolegis.Model.csproj", "{4D195CD6-D3AF-4B54-8BCD-B60043920900}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GOT.Prolegis.Web", "GOT.Prolegis.Web\GOT.Prolegis.Web.csproj", "{72E3653D-7A4E-4180-947B-6BBD941F0E6B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,16 @@ Global
 		{4D195CD6-D3AF-4B54-8BCD-B60043920900}.Release|ARM.ActiveCfg = Release|Any CPU
 		{4D195CD6-D3AF-4B54-8BCD-B60043920900}.Release|x64.ActiveCfg = Release|Any CPU
 		{4D195CD6-D3AF-4B54-8BCD-B60043920900}.Release|x86.ActiveCfg = Release|Any CPU
+		{72E3653D-7A4E-4180-947B-6BBD941F0E6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72E3653D-7A4E-4180-947B-6BBD941F0E6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72E3653D-7A4E-4180-947B-6BBD941F0E6B}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{72E3653D-7A4E-4180-947B-6BBD941F0E6B}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{72E3653D-7A4E-4180-947B-6BBD941F0E6B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{72E3653D-7A4E-4180-947B-6BBD941F0E6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72E3653D-7A4E-4180-947B-6BBD941F0E6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72E3653D-7A4E-4180-947B-6BBD941F0E6B}.Release|ARM.ActiveCfg = Release|Any CPU
+		{72E3653D-7A4E-4180-947B-6BBD941F0E6B}.Release|x64.ActiveCfg = Release|Any CPU
+		{72E3653D-7A4E-4180-947B-6BBD941F0E6B}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

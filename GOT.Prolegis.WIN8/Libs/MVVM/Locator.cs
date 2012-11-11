@@ -4,8 +4,6 @@ using System.Composition;
 using System.Composition.Hosting;
 using System.Linq;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace GOT.Prolegis.WIN8.Libs.MVVM
 {
@@ -27,9 +25,11 @@ namespace GOT.Prolegis.WIN8.Libs.MVVM
         #region Constructor 
         public Locator() 
         {
-            var containerConfiguration = new ContainerConfiguration().WithAssembly(typeof(App).GetTypeInfo().Assembly);
-            CompositionHost host = containerConfiguration.CreateContainer();
-            host.SatisfyImports(this);
+            //var containerConfiguration = new ContainerConfiguration().WithAssembly(typeof(App).GetTypeInfo().Assembly);
+            //CompositionHost host = containerConfiguration.CreateContainer();
+            //host.SatisfyImports(this);
+
+            ImagoContainer.CurrentContainer.SatisfyImports(this);
         }
         #endregion
     }

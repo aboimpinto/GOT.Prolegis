@@ -11,7 +11,7 @@ namespace GOT.Prolegis.Model.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201210250004547_InitialState"; }
+            get { return "201211022331134_InitialState"; }
         }
         
         string IMigrationMetadata.Source

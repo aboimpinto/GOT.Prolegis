@@ -18,5 +18,10 @@ namespace GOT.Prolegis.WIN8.Views
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
         }
+
+        private void CheckBox_Checked_1(object sender, Windows.UI.Xaml.RoutedEventArgs e)
+        {
+
+        }
     }
 }

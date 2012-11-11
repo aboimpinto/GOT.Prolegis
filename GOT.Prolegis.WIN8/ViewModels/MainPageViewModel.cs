@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Composition;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Composition;
 using GOT.Prolegis.WIN8.Libs.MVVM;
 using GOT.Prolegis.WIN8.Libs;
 using System.Collections.ObjectModel;
-using GalaSoft.MvvmLight.Messaging;
 using GOT.Prolegis.WIN8.Dto;
+using GOT.Prolegis.WIN8.Libs.NavigationService;
 
 namespace GOT.Prolegis.WIN8.ViewModels
 {
@@ -38,18 +33,18 @@ namespace GOT.Prolegis.WIN8.ViewModels
             {
                 _menuSelectedItem = value;
                 RaisePropertyChanged(() => MenuSelectedItem);
-                Messenger.Default.Send<WindowNavigationArgs>(new WindowNavigationArgs()
-                {
-                    WindowName=_menuSelectedItem.NavigationWindow,
-                    Parameter = null
-                });
+                this.NavigationService.Navigate(_menuSelectedItem.NavigationWindow);
+                //Messenger.Default.Send<WindowNavigationArgs>(new WindowNavigationArgs()
+                //{
+                //    WindowName=_menuSelectedItem.NavigationWindow,
+                //    Parameter = null
+                //});
             }
         }
         #endregion
 
         #region Constructor
-        [ImportingConstructor]
-        public MainPageViewModel(AppContext appContext) : base(appContext)
+        public MainPageViewModel()
         {
             if (IsInDesignMode)
             {

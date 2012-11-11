@@ -107,6 +107,9 @@
     <AppxPackagedFile Include="C:\Users\Paulo\Documents\GitHub\GOT.Prolegis\GOT.Prolegis.WIN8\bin\x86\Debug\Common\StandardStyles.xaml">
       <PackagePath>Common\StandardStyles.xaml</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Paulo\Documents\GitHub\GOT.Prolegis\GOT.Prolegis.WIN8\bin\x86\Debug\Controls\Breadcrumbs\Breadcrumps.xaml">
+      <PackagePath>Controls\Breadcrumbs\Breadcrumps.xaml</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Paulo\Documents\GitHub\GOT.Prolegis\GOT.Prolegis.WIN8\bin\x86\Debug\Views\EditEntity.xaml">
       <PackagePath>Views\EditEntity.xaml</PackagePath>
     </AppxPackagedFile>

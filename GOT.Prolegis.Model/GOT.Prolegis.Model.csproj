@@ -59,9 +59,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Migrations\201210250004547_InitialState.cs" />
-    <Compile Include="Migrations\201210250004547_InitialState.Designer.cs">
-      <DependentUpon>201210250004547_InitialState.cs</DependentUpon>
+    <Compile Include="Migrations\201211022331134_InitialState.cs" />
+    <Compile Include="Migrations\201211022331134_InitialState.Designer.cs">
+      <DependentUpon>201211022331134_InitialState.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="ProLegisContext.cs" />
@@ -78,8 +78,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201210250004547_InitialState.resx">
-      <DependentUpon>201210250004547_InitialState.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201211022331134_InitialState.resx">
+      <DependentUpon>201211022331134_InitialState.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

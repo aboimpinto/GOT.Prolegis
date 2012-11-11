@@ -4,6 +4,11 @@ using Windows.ApplicationModel.Activation;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Microsoft.WindowsAzure.MobileServices;
+using GOT.Prolegis.WIN8.Libs.NavigationService;
+using System.Composition;
+using System.Composition.Hosting;
+using System.Reflection;
+using GOT.Prolegis.WIN8.Libs;
 
 // The Blank Application template is documented at http://go.microsoft.com/fwlink/?LinkId=234227
 
@@ -15,6 +20,9 @@ namespace GOT.Prolegis.WIN8
     sealed partial class App : Application
     {
         public static MobileServiceClient MobileService = new MobileServiceClient("https://prolegis.azure-mobile.net/", "ypnVfecwJzcEMAqkGUlwRKGHTXCVMM51");
+
+        //[Import]
+        //public INavigationService NavigationService { get; set; }
 
         /// <summary>
         /// Initializes the singleton application object.  This is the first line of authored code
@@ -34,6 +42,10 @@ namespace GOT.Prolegis.WIN8
         /// <param name="args">Details about the launch request and process.</param>
         protected override void OnLaunched(LaunchActivatedEventArgs args)
         {
+            //var containerConfiguration = new ContainerConfiguration().WithAssembly(typeof(App).GetTypeInfo().Assembly);
+            //CompositionHost host = containerConfiguration.CreateContainer();
+            //host.SatisfyImports(this);
+
             Frame rootFrame = Window.Current.Content as Frame;
 
             // Do not repeat app initialization when the Window already has content,
@@ -42,6 +54,9 @@ namespace GOT.Prolegis.WIN8
             {
                 // Create a Frame to act as the navigation context and navigate to the first page
                 rootFrame = new Frame();
+
+                INavigationService navigationService = ImagoContainer.CurrentContainer.GetExport<INavigationService>();
+                navigationService.Frame = rootFrame;
 
                 if (args.PreviousExecutionState == ApplicationExecutionState.Terminated)
                 {
