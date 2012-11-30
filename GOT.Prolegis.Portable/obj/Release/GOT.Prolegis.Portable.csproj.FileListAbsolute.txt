@@ -1,0 +1,5 @@
+C:\Users\Paulo\Documents\GitHub\GOT.Prolegis\GOT.Prolegis.Portable\bin\Release\GOT.Prolegis.Portable.dll
+C:\Users\Paulo\Documents\GitHub\GOT.Prolegis\GOT.Prolegis.Portable\bin\Release\GOT.Prolegis.Portable.pdb
+C:\Users\Paulo\Documents\GitHub\GOT.Prolegis\GOT.Prolegis.Portable\obj\Release\GOT.Prolegis.Portable.csprojResolveAssemblyReference.cache
+C:\Users\Paulo\Documents\GitHub\GOT.Prolegis\GOT.Prolegis.Portable\obj\Release\GOT.Prolegis.Portable.dll
+C:\Users\Paulo\Documents\GitHub\GOT.Prolegis\GOT.Prolegis.Portable\obj\Release\GOT.Prolegis.Portable.pdb

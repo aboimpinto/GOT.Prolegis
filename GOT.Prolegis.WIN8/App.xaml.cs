@@ -20,6 +20,11 @@ namespace GOT.Prolegis.WIN8
     sealed partial class App : Application
     {
         public static MobileServiceClient MobileService = new MobileServiceClient("https://prolegis.azure-mobile.net/", "ypnVfecwJzcEMAqkGUlwRKGHTXCVMM51");
+#if (DEBUG)
+        public static string BackendUrl { get { return @"http://localhost:60060"; } }
+#else
+        public static string BackendUrl { get { return @"http://prolegis.azurewebsites.net"; } }
+#endif
 
         //[Import]
         //public INavigationService NavigationService { get; set; }

@@ -16,17 +16,17 @@
     <AppXManifest Include="C:\Users\Paulo\Documents\GitHub\GOT.Prolegis\GOT.Prolegis.WIN8\bin\x86\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2012-11-10T13:32:59.632</Modified>
+      <Modified>2012-11-30T19:45:18.462</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Paulo\Documents\GitHub\GOT.Prolegis\GOT.Prolegis.WIN8\bin\x86\Debug\GOT.Prolegis.WIN8.exe">
       <PackagePath>GOT.Prolegis.WIN8.exe</PackagePath>
-      <Modified>2012-11-11T00:18:04.159</Modified>
+      <Modified>2012-11-30T20:06:50.694</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Paulo\Documents\GitHub\GOT.Prolegis\GOT.Prolegis.WIN8\bin\x86\Debug\GOT.Prolegis.WIN8.pdb">
       <PackagePath>GOT.Prolegis.WIN8.pdb</PackagePath>
-      <Modified>2012-11-11T00:18:04.139</Modified>
+      <Modified>2012-11-30T20:06:50.669</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Paulo\Documents\GitHub\GOT.Prolegis\packages\MvvmLightLibs.4.1.23.0\lib\winrt45\GalaSoft.MvvmLight.Extras.Win8.dll">
       <PackagePath>GalaSoft.MvvmLight.Extras.Win8.dll</PackagePath>
@@ -38,7 +38,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Paulo\Documents\GitHub\GOT.Prolegis\GOT.Prolegis.Portable\bin\Debug\GOT.Prolegis.Portable.dll">
       <PackagePath>GOT.Prolegis.Portable.dll</PackagePath>
-      <Modified>2012-11-10T23:59:11.858</Modified>
+      <Modified>2012-11-30T19:45:14.959</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Live\v5.0\Metro XAML\References\CommonConfiguration\Neutral\Microsoft.Live.Controls.dll">
       <PackagePath>Microsoft.Live.Controls.dll</PackagePath>
@@ -78,7 +78,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Paulo\Documents\GitHub\GOT.Prolegis\GOT.Prolegis.Portable\bin\Debug\GOT.Prolegis.Portable.pdb">
       <PackagePath>GOT.Prolegis.Portable.pdb</PackagePath>
-      <Modified>2012-11-10T23:59:11.759</Modified>
+      <Modified>2012-11-30T19:45:14.916</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Paulo\Documents\GitHub\GOT.Prolegis\packages\MvvmLightLibs.4.1.23.0\lib\winrt45\GalaSoft.MvvmLight.Extras.Win8.xml">
       <PackagePath>GalaSoft.MvvmLight.Extras.Win8.xml</PackagePath>
@@ -162,7 +162,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Paulo\Documents\GitHub\GOT.Prolegis\GOT.Prolegis.WIN8\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2012-11-10T11:50:30.878</Modified>
+      <Modified>2012-11-18T15:07:05.110</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

@@ -2,6 +2,9 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GOT.Prolegis.WIN8", "GOT.Prolegis.WIN8\GOT.Prolegis.WIN8.csproj", "{F36BEB88-7042-498F-859C-4F76A588A615}"
+	ProjectSection(ProjectDependencies) = postProject
+		{72E3653D-7A4E-4180-947B-6BBD941F0E6B} = {72E3653D-7A4E-4180-947B-6BBD941F0E6B}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GOT.Prolegis.Portable", "GOT.Prolegis.Portable\GOT.Prolegis.Portable.csproj", "{5B7D626D-A020-4C26-9F2D-FCCEEB63A837}"
 EndProject
@@ -33,9 +36,9 @@ Global
 		{F36BEB88-7042-498F-859C-4F76A588A615}.Debug|x86.ActiveCfg = Debug|x86
 		{F36BEB88-7042-498F-859C-4F76A588A615}.Debug|x86.Build.0 = Debug|x86
 		{F36BEB88-7042-498F-859C-4F76A588A615}.Debug|x86.Deploy.0 = Debug|x86
-		{F36BEB88-7042-498F-859C-4F76A588A615}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F36BEB88-7042-498F-859C-4F76A588A615}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F36BEB88-7042-498F-859C-4F76A588A615}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{F36BEB88-7042-498F-859C-4F76A588A615}.Release|Any CPU.ActiveCfg = Release|x86
+		{F36BEB88-7042-498F-859C-4F76A588A615}.Release|Any CPU.Build.0 = Release|x86
+		{F36BEB88-7042-498F-859C-4F76A588A615}.Release|Any CPU.Deploy.0 = Release|x86
 		{F36BEB88-7042-498F-859C-4F76A588A615}.Release|ARM.ActiveCfg = Release|ARM
 		{F36BEB88-7042-498F-859C-4F76A588A615}.Release|ARM.Build.0 = Release|ARM
 		{F36BEB88-7042-498F-859C-4F76A588A615}.Release|ARM.Deploy.0 = Release|ARM

@@ -113,6 +113,7 @@
       <DependentUpon>Breadcrumps.xaml</DependentUpon>
     </Compile>
     <Compile Include="Dto\MenuItemDto.cs" />
+    <Compile Include="Libs\BaseModel.cs" />
     <Compile Include="Libs\ImagoContainer.cs" />
     <Compile Include="Libs\MVVM\IWindowMetadata.cs" />
     <Compile Include="Libs\MVVM\ViewModelMetadata.cs" />
@@ -126,6 +127,7 @@
     <Compile Include="Model\EntityModel.cs" />
     <Compile Include="Model\Intefaces\IAuthenticationModel.cs" />
     <Compile Include="Model\Intefaces\IEntityModel.cs" />
+    <Compile Include="ServiceProxies\AuthenticationServiceProxy.cs" />
     <Compile Include="ViewModels\EditEntityViewModel.cs" />
     <Compile Include="ViewModels\EntityListViewModel.cs" />
     <Compile Include="ViewModels\Interfaces\IEditEntityViewModel.cs" />
@@ -148,6 +150,8 @@
     </AppxManifest>
     <None Include="GOT.Prolegis.WIN8_TemporaryKey.pfx" />
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\GOT.Prolegis.Portable.Authentication.tblUser.datasource" />
+    <None Include="Properties\ServiceReferences.Designer.ClientConfig" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\Logo.png" />
@@ -223,7 +227,6 @@
       <Name>GOT.Prolegis.Portable</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0' ">
     <VisualStudioVersion>11.0</VisualStudioVersion>
   </PropertyGroup>

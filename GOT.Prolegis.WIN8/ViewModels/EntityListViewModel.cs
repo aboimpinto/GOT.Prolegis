@@ -1,6 +1,5 @@
 ﻿using GalaSoft.MvvmLight.Command;
 using GalaSoft.MvvmLight.Messaging;
-using GOT.Prolegis.Portable.Entities;
 using GOT.Prolegis.WIN8.Libs;
 using GOT.Prolegis.WIN8.Libs.MVVM;
 using GOT.Prolegis.WIN8.Model.Intefaces;
@@ -17,8 +16,8 @@ namespace GOT.Prolegis.WIN8.ViewModels
         #region Private Fields 
         private IEntityModel _entityModel;
 
-        private IEnumerable<tblEntity> _entities;
-        private tblEntity _entitySelected;
+        //private IEnumerable<tblEntity> _entities;
+        //private tblEntity _entitySelected;
         #endregion
 
         #region Constructor
@@ -43,36 +42,36 @@ namespace GOT.Prolegis.WIN8.ViewModels
         {
             base.InitializeViewModel();
 
-            this.Entities = await _entityModel.ListEntities();
+            //this.Entities = await _entityModel.ListEntities();
         }
         #endregion
 
         #region IEntityListViewModel Implementation 
-        public IEnumerable<tblEntity> Entities 
-        {
-            get { return _entities; }
-            set 
-            {
-                _entities = value;
-                RaisePropertyChanged(() => Entities);
-            }
-        }
-        public tblEntity EntitySelected 
-        {
-            get { return _entitySelected; }
-            set 
-            {
-                _entitySelected = value;
-                RaisePropertyChanged(() => EntitySelected);
+        //public IEnumerable<tblEntity> Entities 
+        //{
+        //    get { return _entities; }
+        //    set 
+        //    {
+        //        _entities = value;
+        //        RaisePropertyChanged(() => Entities);
+        //    }
+        //}
+        //public tblEntity EntitySelected 
+        //{
+        //    get { return _entitySelected; }
+        //    set 
+        //    {
+        //        _entitySelected = value;
+        //        RaisePropertyChanged(() => EntitySelected);
 
-                if (_entitySelected == null) return;
-                Messenger.Default.Send<WindowNavigationArgs>(new WindowNavigationArgs()
-                {
-                    WindowName = "EditEntity",
-                    Parameter = EntitySelected
-                });
-            }
-        }
+        //        if (_entitySelected == null) return;
+        //        Messenger.Default.Send<WindowNavigationArgs>(new WindowNavigationArgs()
+        //        {
+        //            WindowName = "EditEntity",
+        //            Parameter = EntitySelected
+        //        });
+        //    }
+        //}
 
         public RelayCommand NewEntityCommand { get; private set; }
         #endregion

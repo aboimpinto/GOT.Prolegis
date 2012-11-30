@@ -1,5 +1,4 @@
 ﻿using GalaSoft.MvvmLight;
-using GOT.Prolegis.Portable.Authentication;
 using GOT.Prolegis.WIN8.Libs.NavigationService;
 using GOT.Prolegis.WIN8.Model.Intefaces;
 using Microsoft.Live;
@@ -53,7 +52,6 @@ namespace GOT.Prolegis.WIN8.Libs.MVVM
             switch (tskLoginResult.Result.Status)
             {
                 case LiveConnectSessionStatus.Connected:
-
                     try
                     {
                         LiveConnectClient client = new LiveConnectClient(tskLoginResult.Result.Session);

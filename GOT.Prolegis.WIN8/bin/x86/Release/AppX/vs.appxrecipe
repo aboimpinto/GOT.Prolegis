@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>HP-WIN8</Machine>
+    <WindowsUser>Paulo</WindowsUser>
+    <SolutionConfiguration>Release|x86</SolutionConfiguration>
+    <PackageArchitecture>x86</PackageArchitecture>
+    <RegisteredManifestChecksum>166BE41E2D9C13C796AA6F5E8BBA93EBD57ABA76546B15B503A3E3A8C2D675B9</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>BUILD.ab013e28-2853-4e99-9e14-5d22b8e0324f_1.0.0.0_x86__3y5pzqhnrrj94</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>BUILD.ab013e28-2853-4e99-9e14-5d22b8e0324f_3y5pzqhnrrj94!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>BUILD.ab013e28-2853-4e99-9e14-5d22b8e0324f</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=Paulo</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\Paulo\Documents\GitHub\GOT.Prolegis\GOT.Prolegis.WIN8\bin\x86\Release\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-11-17T21:52:11.060</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\Paulo\Documents\GitHub\GOT.Prolegis\GOT.Prolegis.WIN8\bin\x86\Release\GOT.Prolegis.WIN8.exe">
+      <PackagePath>GOT.Prolegis.WIN8.exe</PackagePath>
+      <Modified>2012-11-17T21:53:37.873</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Paulo\Documents\GitHub\GOT.Prolegis\GOT.Prolegis.WIN8\bin\x86\Release\GOT.Prolegis.WIN8.pdb">
+      <PackagePath>GOT.Prolegis.WIN8.pdb</PackagePath>
+      <Modified>2012-11-17T21:53:37.849</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Paulo\Documents\GitHub\GOT.Prolegis\packages\MvvmLightLibs.4.1.23.0\lib\winrt45\GalaSoft.MvvmLight.Extras.Win8.dll">
+      <PackagePath>GalaSoft.MvvmLight.Extras.Win8.dll</PackagePath>
+      <Modified>2012-09-18T19:12:45.286</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Paulo\Documents\GitHub\GOT.Prolegis\packages\MvvmLightLibs.4.1.23.0\lib\winrt45\GalaSoft.MvvmLight.Win8.dll">
+      <PackagePath>GalaSoft.MvvmLight.Win8.dll</PackagePath>
+      <Modified>2012-09-18T19:12:45.303</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Paulo\Documents\GitHub\GOT.Prolegis\GOT.Prolegis.Portable\bin\Release\GOT.Prolegis.Portable.dll">
+      <PackagePath>GOT.Prolegis.Portable.dll</PackagePath>
+      <Modified>2012-11-17T21:49:50.393</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Live\v5.0\Metro XAML\References\CommonConfiguration\Neutral\Microsoft.Live.Controls.dll">
+      <PackagePath>Microsoft.Live.Controls.dll</PackagePath>
+      <Modified>2012-08-02T11:43:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Live\v5.0\Metro XAML\References\CommonConfiguration\Neutral\Microsoft.Live.dll">
+      <PackagePath>Microsoft.Live.dll</PackagePath>
+      <Modified>2012-08-02T11:43:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Paulo\Documents\GitHub\GOT.Prolegis\packages\MvvmLightLibs.4.1.23.0\lib\winrt45\Microsoft.Practices.ServiceLocation.dll">
+      <PackagePath>Microsoft.Practices.ServiceLocation.dll</PackagePath>
+      <Modified>2012-09-18T19:12:45.321</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.0\ExtensionSDKs\MobileServicesManagedClient\0.2.0.0\References\CommonConfiguration\neutral\Microsoft.WindowsAzure.MobileServices.Managed.dll">
+      <PackagePath>Microsoft.WindowsAzure.MobileServices.Managed.dll</PackagePath>
+      <Modified>2012-08-24T08:54:14.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Paulo\Documents\GitHub\GOT.Prolegis\packages\Microsoft.Composition.1.0.15\lib\netcore45\System.Composition.AttributedModel.dll">
+      <PackagePath>System.Composition.AttributedModel.dll</PackagePath>
+      <Modified>2012-09-18T21:29:25.270</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Paulo\Documents\GitHub\GOT.Prolegis\packages\Microsoft.Composition.1.0.15\lib\netcore45\System.Composition.Convention.dll">
+      <PackagePath>System.Composition.Convention.dll</PackagePath>
+      <Modified>2012-09-18T21:29:25.288</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Paulo\Documents\GitHub\GOT.Prolegis\packages\Microsoft.Composition.1.0.15\lib\netcore45\System.Composition.Hosting.dll">
+      <PackagePath>System.Composition.Hosting.dll</PackagePath>
+      <Modified>2012-09-18T21:29:25.304</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Paulo\Documents\GitHub\GOT.Prolegis\packages\Microsoft.Composition.1.0.15\lib\netcore45\System.Composition.Runtime.dll">
+      <PackagePath>System.Composition.Runtime.dll</PackagePath>
+      <Modified>2012-09-18T21:29:25.320</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Paulo\Documents\GitHub\GOT.Prolegis\packages\Microsoft.Composition.1.0.15\lib\netcore45\System.Composition.TypedParts.dll">
+      <PackagePath>System.Composition.TypedParts.dll</PackagePath>
+      <Modified>2012-09-18T21:29:25.336</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Paulo\Documents\GitHub\GOT.Prolegis\GOT.Prolegis.Portable\bin\Release\GOT.Prolegis.Portable.pdb">
+      <PackagePath>GOT.Prolegis.Portable.pdb</PackagePath>
+      <Modified>2012-11-17T21:49:50.375</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Paulo\Documents\GitHub\GOT.Prolegis\packages\MvvmLightLibs.4.1.23.0\lib\winrt45\GalaSoft.MvvmLight.Extras.Win8.xml">
+      <PackagePath>GalaSoft.MvvmLight.Extras.Win8.xml</PackagePath>
+      <Modified>2012-09-18T19:12:45.289</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Paulo\Documents\GitHub\GOT.Prolegis\packages\MvvmLightLibs.4.1.23.0\lib\winrt45\GalaSoft.MvvmLight.Win8.xml">
+      <PackagePath>GalaSoft.MvvmLight.Win8.xml</PackagePath>
+      <Modified>2012-09-18T19:12:45.306</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Paulo\Documents\GitHub\GOT.Prolegis\packages\MvvmLightLibs.4.1.23.0\lib\winrt45\Microsoft.Practices.ServiceLocation.xml">
+      <PackagePath>Microsoft.Practices.ServiceLocation.xml</PackagePath>
+      <Modified>2012-09-18T19:12:45.324</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Paulo\Documents\GitHub\GOT.Prolegis\packages\Microsoft.Composition.1.0.15\lib\netcore45\System.Composition.AttributedModel.xml">
+      <PackagePath>System.Composition.AttributedModel.xml</PackagePath>
+      <Modified>2012-09-18T21:29:25.272</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Paulo\Documents\GitHub\GOT.Prolegis\packages\Microsoft.Composition.1.0.15\lib\netcore45\System.Composition.Convention.xml">
+      <PackagePath>System.Composition.Convention.xml</PackagePath>
+      <Modified>2012-09-18T21:29:25.290</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Paulo\Documents\GitHub\GOT.Prolegis\packages\Microsoft.Composition.1.0.15\lib\netcore45\System.Composition.Hosting.xml">
+      <PackagePath>System.Composition.Hosting.xml</PackagePath>
+      <Modified>2012-09-18T21:29:25.306</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Paulo\Documents\GitHub\GOT.Prolegis\packages\Microsoft.Composition.1.0.15\lib\netcore45\System.Composition.Runtime.xml">
+      <PackagePath>System.Composition.Runtime.xml</PackagePath>
+      <Modified>2012-09-18T21:29:25.322</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Paulo\Documents\GitHub\GOT.Prolegis\packages\Microsoft.Composition.1.0.15\lib\netcore45\System.Composition.TypedParts.xml">
+      <PackagePath>System.Composition.TypedParts.xml</PackagePath>
+      <Modified>2012-09-18T21:29:25.338</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Paulo\Documents\GitHub\GOT.Prolegis\GOT.Prolegis.WIN8\Assets\Logo.png">
+      <PackagePath>Assets\Logo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-03-15T19:42:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Paulo\Documents\GitHub\GOT.Prolegis\GOT.Prolegis.WIN8\Assets\SmallLogo.png">
+      <PackagePath>Assets\SmallLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-03-15T19:42:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Paulo\Documents\GitHub\GOT.Prolegis\GOT.Prolegis.WIN8\Assets\SplashScreen.png">
+      <PackagePath>Assets\SplashScreen.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-03-15T19:42:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Paulo\Documents\GitHub\GOT.Prolegis\GOT.Prolegis.WIN8\Assets\StoreLogo.png">
+      <PackagePath>Assets\StoreLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-03-15T19:42:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Paulo\Documents\GitHub\GOT.Prolegis\GOT.Prolegis.WIN8\Common\ReadMe.txt">
+      <PackagePath>Common\ReadMe.txt</PackagePath>
+      <Modified>2012-10-25T20:34:25.455</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Paulo\Documents\GitHub\GOT.Prolegis\GOT.Prolegis.WIN8\bin\x86\Release\App.xaml">
+      <PackagePath>App.xaml</PackagePath>
+      <Modified>2012-09-18T22:05:02.274</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Paulo\Documents\GitHub\GOT.Prolegis\GOT.Prolegis.WIN8\bin\x86\Release\Common\StandardStyles.xaml">
+      <PackagePath>Common\StandardStyles.xaml</PackagePath>
+      <Modified>2012-06-26T15:19:20.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Paulo\Documents\GitHub\GOT.Prolegis\GOT.Prolegis.WIN8\bin\x86\Release\Controls\Breadcrumbs\Breadcrumps.xaml">
+      <PackagePath>Controls\Breadcrumbs\Breadcrumps.xaml</PackagePath>
+      <Modified>2012-11-01T03:19:19.589</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Paulo\Documents\GitHub\GOT.Prolegis\GOT.Prolegis.WIN8\bin\x86\Release\Views\EditEntity.xaml">
+      <PackagePath>Views\EditEntity.xaml</PackagePath>
+      <Modified>2012-11-10T14:41:00.960</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Paulo\Documents\GitHub\GOT.Prolegis\GOT.Prolegis.WIN8\bin\x86\Release\Views\EntitiesList.xaml">
+      <PackagePath>Views\EntitiesList.xaml</PackagePath>
+      <Modified>2012-11-10T17:28:14.971</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Paulo\Documents\GitHub\GOT.Prolegis\GOT.Prolegis.WIN8\bin\x86\Release\Views\MainPage.xaml">
+      <PackagePath>Views\MainPage.xaml</PackagePath>
+      <Modified>2012-11-02T22:11:16.772</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Paulo\Documents\GitHub\GOT.Prolegis\GOT.Prolegis.WIN8\bin\x86\Release\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2012-11-17T21:52:10.958</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

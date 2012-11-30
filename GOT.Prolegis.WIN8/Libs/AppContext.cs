@@ -1,5 +1,4 @@
-﻿using GOT.Prolegis.Portable.Authentication;
-using GOT.Prolegis.WIN8.Libs.NavigationService;
+﻿using GOT.Prolegis.WIN8.Libs.NavigationService;
 using GOT.Prolegis.WIN8.Model;
 using GOT.Prolegis.WIN8.Model.Intefaces;
 using System;
@@ -35,12 +34,8 @@ namespace GOT.Prolegis.WIN8.Libs
         #region Public Methods 
         public async Task<bool> CheckDatabaseUser(dynamic msnUser) 
         {
-            List<tblUser> users = await _authModel.CheckDatabaseUser(msnUser);
-
-            if (users.Count() == 0)
-            {
-                _authModel.InsertMsnUser(msnUser);
-            }
+            var user = await _authModel.CheckDatabaseUser(msnUser);
+            if (user == null) _authModel.InsertMsnUser(msnUser);
 
             return true;
         }

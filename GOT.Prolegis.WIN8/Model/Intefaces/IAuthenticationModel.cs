@@ -10,7 +10,7 @@ namespace GOT.Prolegis.WIN8.Model.Intefaces
 {
     public interface IAuthenticationModel
     {
-        Task<List<tblUser>> CheckDatabaseUser(dynamic msdnUser);
-        void InsertMsnUser(dynamic msnUser);
+        Task<tblUser> CheckDatabaseUser(dynamic msdnUser);
+        Task<bool> InsertMsnUser(dynamic msnUser);
     }
 }

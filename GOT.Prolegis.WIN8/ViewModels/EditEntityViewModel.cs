@@ -1,6 +1,5 @@
 ﻿using GalaSoft.MvvmLight.Command;
 using GalaSoft.MvvmLight.Messaging;
-using GOT.Prolegis.Portable.Entities;
 using GOT.Prolegis.WIN8.Libs;
 using GOT.Prolegis.WIN8.Libs.MVVM;
 using GOT.Prolegis.WIN8.Model.Intefaces;
@@ -16,7 +15,7 @@ namespace GOT.Prolegis.WIN8.ViewModels
         #region Private Fields 
         private IEntityModel _entityModel;
 
-        private tblEntity _entity; 
+        //private tblEntity _entity; 
         #endregion
 
         #region Constructor 
@@ -27,7 +26,7 @@ namespace GOT.Prolegis.WIN8.ViewModels
 
             SaveEntityCommand = new RelayCommand(() =>
             {
-                _entityModel.SaveEntity(this.Entity);
+                //_entityModel.SaveEntity(this.Entity);
 
                 Messenger.Default.Send<WindowNavigationArgs>(new WindowNavigationArgs()
                 {
@@ -43,21 +42,21 @@ namespace GOT.Prolegis.WIN8.ViewModels
         {
             base.InitializeViewModel();
 
-            if (this.WindowParamers == null) this.Entity = new tblEntity() { IsClient = true };
-            else this.Entity = this.WindowParamers as tblEntity;
+            //if (this.WindowParamers == null) this.Entity = new tblEntity() { IsClient = true };
+            //else this.Entity = this.WindowParamers as tblEntity;
         }
         #endregion
 
         #region IEditEntityViewModel Implementation
-        public tblEntity Entity 
-        {
-            get { return _entity; }
-            set 
-            {
-                _entity = value;
-                RaisePropertyChanged(() => Entity);
-            }
-        }
+        //public tblEntity Entity 
+        //{
+        //    get { return _entity; }
+        //    set 
+        //    {
+        //        _entity = value;
+        //        RaisePropertyChanged(() => Entity);
+        //    }
+        //}
 
         public RelayCommand SaveEntityCommand { get; private set; }
         #endregion
